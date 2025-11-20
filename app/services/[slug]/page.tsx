@@ -123,7 +123,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
               <FadeIn delay={0.2}>
                 <div className="glass rounded-2xl p-8">
                   <h2 className="text-3xl font-bold text-white mb-6">
-                    What's Included
+                    What&apos;s Included
                   </h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {service.features.map((feature, index) => (
@@ -149,8 +149,8 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
                     Ready to Get Started?
                   </h3>
                   <p className="text-gray-400 mb-6">
-                    Let's discuss how this service can benefit your
-                    organization.
+                    Let&apos;s discuss how this service can benefit your
+                    organization. organization.
                   </p>
                   <ButtonWithArrow href="/contact" className="w-full mb-4">
                     Request a Quote
@@ -202,7 +202,7 @@ export default function ServicePage({ params }: { params: { slug: string } }) {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <FadeIn>
             <h2 className="text-3xl lg:text-4xl font-bold text-white mb-4">
-              Let's Optimize Your Automobile Assets
+              Let&apos;s Optimize Your Automobile Assets
             </h2>
             <p className="text-lg text-gray-300 mb-8">
               Schedule a free consultation to learn how we can help you achieve

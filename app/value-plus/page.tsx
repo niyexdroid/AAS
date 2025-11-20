@@ -125,10 +125,11 @@ export default function ValuePlusPage() {
                     this gold-standard warranty protection.
                   </p>
                   <p>
-                    With AAS Value+, you're not just getting warranty coverage –
-                    you're getting complete peace of mind, knowing your vehicle
-                    has been thoroughly inspected and any repairs will be
-                    handled with genuine OEM parts by certified technicians.
+                    With AAS Value+, you&apos;re not just getting warranty
+                    coverage – you&apos;re getting complete peace of mind,
+                    knowing your vehicle has been thoroughly inspected and any
+                    repairs will be handled with genuine OEM parts by certified
+                    technicians.
                   </p>
                 </div>
               </div>
@@ -193,7 +194,7 @@ export default function ValuePlusPage() {
             <FadeIn>
               <div className="glass rounded-2xl p-8 lg:p-10">
                 <h2 className="text-3xl lg:text-4xl font-bold text-white mb-8">
-                  What's Covered
+                  What&apos;s Covered
                 </h2>
                 <ul className="space-y-4">
                   {coverageItems.map((item, index) => (
