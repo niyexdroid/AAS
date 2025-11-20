@@ -77,8 +77,8 @@ export default function ContactPage() {
               Get in <span className="text-gradient">Touch</span>
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Ready to optimize your automobile assets? Let's discuss how we can
-              help you achieve your goals.
+              Ready to optimize your automobile assets? Let&apos;s discuss how
+              we can help you achieve your goals.
             </p>
           </FadeIn>
         </div>
@@ -122,8 +122,8 @@ export default function ContactPage() {
                   Send Us a Message
                 </h2>
                 <p className="text-gray-400 mb-8">
-                  Fill out the form below and we'll get back to you within 24
-                  hours.
+                  Fill out the form below and we&apos;ll get back to you within
+                  24 hours.
                 </p>
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
@@ -293,8 +293,8 @@ export default function ContactPage() {
 
                   {submitStatus === "success" && (
                     <div className="p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-400 text-sm">
-                      Thank you! We've received your message and will get back
-                      to you soon.
+                      Thank you! We&apos;ve received your message and will get
+                      back to you soon.
                     </div>
                   )}
 

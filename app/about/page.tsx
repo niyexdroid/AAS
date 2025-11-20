@@ -110,9 +110,10 @@ export default function AboutPage() {
                   Our Vision
                 </h2>
                 <p className="text-lg text-gray-300 leading-relaxed">
-                  To be West Africa's most trusted and comprehensive automobile
-                  advisory service, setting the standard for excellence in fleet
-                  management, vehicle acquisition, and automotive consulting.
+                  To be West Africa&apos;s most trusted and comprehensive
+                  automobile advisory service, setting the standard for
+                  excellence in fleet management, vehicle acquisition, and
+                  automotive consulting.
                 </p>
               </div>
             </FadeIn>
@@ -136,10 +137,10 @@ export default function AboutPage() {
                     Nigerian businesses and individuals.
                   </p>
                   <p>
-                    With over 5 years of industry experience, we've grown from a
-                    small advisory firm to a comprehensive automobile solutions
-                    provider, serving 150+ corporate clients and hundreds of
-                    satisfied individual customers.
+                    With over 5 years of industry experience, we&apos;ve grown
+                    from a small advisory firm to a comprehensive automobile
+                    solutions provider, serving 150+ corporate clients and
+                    hundreds of satisfied individual customers.
                   </p>
                   <p>
                     Our team of certified automotive professionals brings
@@ -148,8 +149,8 @@ export default function AboutPage() {
                     unmatched value to our clients.
                   </p>
                   <p>
-                    Today, we're proud to be Nigeria's trusted partner for
-                    everything automobile – from strategic consulting to
+                    Today, we&apos;re proud to be Nigeria&apos;s trusted partner
+                    for everything automobile – from strategic consulting to
                     hands-on maintenance, backed by our industry-leading AAS
                     Value+ Warranty.
                   </p>

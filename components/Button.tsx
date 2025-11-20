@@ -12,6 +12,7 @@ interface ButtonProps {
   size?: "sm" | "md" | "lg";
   className?: string;
   type?: "button" | "submit" | "reset";
+  disabled?: boolean;
 }
 
 export function Button({
@@ -22,6 +23,7 @@ export function Button({
   size = "md",
   className = "",
   type = "button",
+  disabled = false,
 }: ButtonProps) {
   const baseStyles =
     "inline-flex items-center justify-center font-semibold rounded-lg transition-all duration-300";
@@ -39,14 +41,15 @@ export function Button({
     lg: "px-8 py-4 text-lg",
   };
 
-  const buttonClasses = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
+  const disabledStyles = disabled ? "opacity-50 cursor-not-allowed" : "";
+  const buttonClasses = `${baseStyles} ${variants[variant]} ${sizes[size]} ${disabledStyles} ${className}`;
 
   if (href) {
     return (
       <Link href={href}>
         <motion.span
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
+          whileHover={{ scale: disabled ? 1 : 1.05 }}
+          whileTap={{ scale: disabled ? 1 : 0.95 }}
           className={buttonClasses}
         >
           {children}
@@ -59,8 +62,9 @@ export function Button({
     <motion.button
       type={type}
       onClick={onClick}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
+      disabled={disabled}
+      whileHover={{ scale: disabled ? 1 : 1.05 }}
+      whileTap={{ scale: disabled ? 1 : 0.95 }}
       className={buttonClasses}
     >
       {children}

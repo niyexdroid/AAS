@@ -6,6 +6,7 @@ import { servicesData } from "@/lib/data";
 import { FadeIn } from "@/components/AnimatedSection";
 import { ButtonWithArrow } from "@/components/Button";
 import { Check, ArrowLeft } from "lucide-react";
+import { SlugPageProps } from "@/types/next";
 
 export async function generateStaticParams() {
   return servicesData.map((service) => ({
@@ -13,12 +14,12 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { slug: string };
-}): Promise<Metadata> {
-  const service = servicesData.find((s) => s.slug === params.slug);
+export async function generateMetadata(
+  props: SlugPageProps
+): Promise<Metadata> {
+  const params = await props.params;
+  const { slug } = params;
+  const service = servicesData.find((s) => s.slug === slug);
 
   if (!service) {
     return {
@@ -37,8 +38,10 @@ export async function generateMetadata({
   };
 }
 
-export default function ServicePage({ params }: { params: { slug: string } }) {
-  const service = servicesData.find((s) => s.slug === params.slug);
+export default async function ServicePage(props: SlugPageProps) {
+  const params = await props.params;
+  const { slug } = params;
+  const service = servicesData.find((s) => s.slug === slug);
 
   if (!service) {
     notFound();
