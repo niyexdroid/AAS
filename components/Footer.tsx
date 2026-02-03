@@ -12,6 +12,7 @@ import {
   Twitter,
 } from "lucide-react";
 import { FaTiktok, FaWhatsapp } from "react-icons/fa";
+import WhatsAppButton from "./WhatsAppButton";
 
 const services = [
   { name: "Auto Advisory", href: "/services/auto-advisory" },
@@ -115,15 +116,24 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3 text-gray-400 text-sm">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
-                <span>Lagos, Nigeria</span>
+                <span>
+                  EML, 29 Ziatech Rd, Off Oregun, Ikeja, Lagos, Nigeria
+                </span>
               </li>
               <li className="flex items-center space-x-3 text-gray-400 text-sm">
-                <Phone className="w-5 h-5 text-gold flex-shrink-0" />
-                <span>+234 XXX XXX XXXX</span>
+                <FaWhatsapp className="w-5 h-5 text-gold flex-shrink-0" />
+                <a
+                  href="https://wa.me/2348090548576?text=Hello,%20what%20help%20do%20you%20need%20with%20automobile(s)%20today?"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold transition-colors"
+                >
+                  +234 809 054 8576
+                </a>
               </li>
               <li className="flex items-center space-x-3 text-gray-400 text-sm">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <span>info@automobadvisory.com</span>
+                <span>automobadvisory@outlook.com</span>
               </li>
             </ul>
           </div>

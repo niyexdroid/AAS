@@ -16,8 +16,8 @@ export default function ServicesOverview() {
             Our <span className="text-gradient">Premium Services</span>
           </h2>
           <p className="text-lg text-gray-400">
-            Comprehensive automobile solutions tailored for corporate fleets and
-            discerning individuals
+            Comprehensive automobile solutions tailored for company auto needs
+            and discerning individuals
           </p>
         </FadeIn>
 

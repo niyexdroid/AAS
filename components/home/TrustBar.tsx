@@ -40,7 +40,7 @@ export default function TrustBar() {
           viewport={{ once: true }}
           className="text-center text-gray-400 text-sm uppercase tracking-wider mb-8"
         >
-          Trusted by Reputable Organizations
+          Partnered & Trusted by Reputable Organizations
         </motion.h3>
 
         {/* Auto-scrolling carousel */}
@@ -71,7 +71,7 @@ export default function TrustBar() {
                     </span>
                   </div>
                 </div>
-              )
+              ),
             )}
           </motion.div>
         </div>

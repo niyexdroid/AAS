@@ -41,22 +41,25 @@ export default function FinalCTA() {
         <FadeIn className="text-center max-w-4xl mx-auto">
           <h2 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             Ready to Optimize Your{" "}
-            <span className="text-gradient">Auto Assets?</span>
+            <span className="text-gradient">Auto Decision?</span>
           </h2>
 
           <p className="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            Join 150+ corporate clients and hundreds of satisfied individuals
-            who trust AAS for their automobile needs.
+            Join 50+ corporate clients and hundreds of satisfied individuals who
+            trust AAS for their automobile needs.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <ButtonWithArrow href="/contact" size="lg">
+            <ButtonWithArrow
+              href="https://calendar.app.google/Fch4PiM8An9TmiRH7"
+              size="lg"
+            >
               <Calendar className="mr-2 w-5 h-5" />
               Schedule a Call Today
             </ButtonWithArrow>
 
             <a
-              href="tel:+234XXXXXXXXXX"
+              href="https://wa.me/2348090548576?text=Hello,%20what%20help%20do%20you%20need%20with%20automobile(s)%20today?"
               className="inline-flex items-center px-8 py-4 text-lg font-semibold text-gold border-2 border-gold rounded-lg hover:bg-gold hover:text-navy transition-all duration-300 hover:scale-105"
             >
               <Phone className="mr-2 w-5 h-5" />
@@ -67,10 +70,10 @@ export default function FinalCTA() {
           {/* Trust indicators */}
           <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8 pt-12 border-t border-white/10">
             {[
-              { value: "500+", label: "Vehicles Serviced" },
-              { value: "150+", label: "Corporate Clients" },
-              { value: "98%", label: "Satisfaction Rate" },
-              { value: "24/7", label: "Support Available" },
+              { value: "500+", label: "Vehicles Sold & Serviced" },
+              { value: "50+", label: "Corporate Clients" },
+              { value: "10", label: "Years of Excellence" },
+              { value: "98%+", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <motion.div
                 key={index}

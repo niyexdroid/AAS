@@ -15,7 +15,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata(
-  props: SlugPageProps
+  props: SlugPageProps,
 ): Promise<Metadata> {
   const params = await props.params;
   const { slug } = params;
@@ -152,17 +152,21 @@ export default async function ServicePage(props: SlugPageProps) {
                     Ready to Get Started?
                   </h3>
                   <p className="text-gray-400 mb-6">
-                    Let&apos;s discuss how this service can benefit your
-                    organization. organization.
+                    {service.slug === "auto-training"
+                      ? "Let’s discuss how this training can benefit you or your organization."
+                      : "Let's discuss how the pro services can benefit you or your organization"}
                   </p>
-                  <ButtonWithArrow href="/contact" className="w-full mb-4">
-                    Request a Quote
+                  <ButtonWithArrow
+                    href="https://calendar.app.google/Fch4PiM8An9TmiRH7"
+                    className="w-full mb-4"
+                  >
+                    Book a Meeting
                   </ButtonWithArrow>
                   <a
-                    href="tel:+234XXXXXXXXXX"
+                    href="https://wa.me/2348090548576?text=Hello,%20what%20help%20do%20you%20need%20with%20automobile(s)%20today?"
                     className="block text-gold hover:text-gold-light transition-colors"
                   >
-                    Or call: +234 XXX XXX XXXX
+                    Or call/chat: +234 809 054 8576
                   </a>
                 </div>
               </FadeIn>

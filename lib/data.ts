@@ -57,17 +57,17 @@ export const servicesData = [
     slug: "vehicle-acquisition",
     shortTitle: "Hassle-Free Vehicle Acquisition",
     description:
-      "Direct access to OEM franchises and authorized dealers. We handle the entire acquisition process from selection to delivery.",
+      "Direct access to OEM franchises and authorized dealers.we handle the entire acquisition process at competitive prices and with an option for Auto finance at competitive rates from selection to delivery.",
     icon: "🚗",
     image:
       "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=800&q=80",
     fullDescription:
-      "Skip the hassle of dealing with multiple dealers. Our direct OEM relationships and franchise brokerage services ensure you get authentic vehicles at competitive prices with full manufacturer backing.",
+      "Skip the hassle of dealing with multiple dealers and need for Auto finance. Our direct OEM relationships and franchise brokerage services ensure you get authentic vehicles at competitive prices with full manufacturer backing. We would provide competitive leasing or auto finance support too where needed.",
     benefits: [
       "Direct OEM access and franchise connections",
       "Guaranteed authentic vehicles",
       "Competitive pricing through bulk relationships",
-      "Complete documentation handling",
+      "Attractive Auto-Finance or Leasing Option",
       "Home or office delivery",
     ],
     features: [
@@ -291,8 +291,8 @@ export const mainServices = [
 
 export const testimonials = [
   {
-    name: "Adewale Johnson",
-    position: "Fleet Manager, TechCorp Nigeria",
+    name: "Olumide Tella",
+    position: "CEO, Motus Tech",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80",
     content:
@@ -300,8 +300,8 @@ export const testimonials = [
     rating: 5,
   },
   {
-    name: "Chioma Okafor",
-    position: "CEO, Apex Logistics",
+    name: "Ajay Ramnani",
+    position: "MD, VIK Industries",
     image:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&q=80",
     content:
@@ -309,19 +309,37 @@ export const testimonials = [
     rating: 5,
   },
   {
-    name: "Tunde Bakare",
-    position: "Private Client",
+    name: "Ofonime Umoren",
+    position: "Relationship Manager, Pennywise Micro-Finance Bank",
     image:
       "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=300&q=80",
     content:
-      "Bought my Mercedes through AAS. The VQIV inspection gave me complete peace of mind. Worth every penny for the Value+ warranty alone!",
+      "For every vehicle we financed, AAS provided technical insights if worth the asset investment and it has been worth every single deal",
+    rating: 5,
+  },
+  {
+    name: "Lara Bolarinde",
+    position: "Bureau Veritas Nig Ltd",
+    image:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&q=80",
+    content:
+      "AAS provides VQIV Inspection for all vehicles for book valuation and asset disposal decision. Their blend of technical metrics and account metrics is quite impressive",
+    rating: 5,
+  },
+  {
+    name: "Engr. L. Olujide",
+    position: "Private Client",
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80",
+    content:
+      "Bought my Mercedes ML 350 & Hyundai Santa Fe through AAS. The VQIV inspection gave me complete peace of mind. Worth every penny for the Value+ warranty alone!",
     rating: 5,
   },
 ];
 
 export const stats = [
-  { value: "500+", label: "Vehicles Serviced" },
-  { value: "150+", label: "Corporate Clients" },
-  { value: "5+", label: "Years of Excellence" },
-  { value: "98%", label: "Client Satisfaction" },
+  { value: "500+", label: "Vehicles Sold & Serviced" },
+  { value: "50+", label: "Corporate Clients" },
+  { value: "10", label: "Years of Excellence" },
+  { value: "98%+", label: "Client Satisfaction" },
 ];

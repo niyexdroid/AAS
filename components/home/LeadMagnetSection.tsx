@@ -54,8 +54,8 @@ export default function LeadMagnetSection() {
               </h2>
 
               <p className="text-xl text-gray-300 mb-8">
-                5 Costly Mistakes to Avoid When Buying a Car & Changing Your
-                Lubes
+                5 Costly Mistakes to Avoid When Buying/Selling a Car & Changing
+                Your Lubes
               </p>
 
               <p className="text-gray-400 mb-8">

@@ -10,11 +10,11 @@ import FinalCTA from "@/components/home/FinalCTA";
 export const metadata: Metadata = {
   title: "Home",
   description:
-    "End the burden of automobile asset acquisition, ownership & management. Comprehensive automobile solutions for corporate fleets and discerning individuals in Nigeria.",
+    "End the burden of Auto Asset Acquisition, Ownership, Utility, Management & Replacement. Comprehensive automobile solutions for corporate fleets and discerning individuals in Nigeria.",
   openGraph: {
     title: "Automob Advisory Services | Premium Auto Solutions in Nigeria",
     description:
-      "End the burden of automobile asset acquisition, ownership & management.",
+      "End the burden of Auto Asset Acquisition, Ownership, Utility, Management & Replacement.",
     images: ["/og-home.jpg"],
   },
 };

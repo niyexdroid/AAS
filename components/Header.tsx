@@ -7,13 +7,14 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const navigation = [
   { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Rare Offer", href: "/rare-offer" },
   {
-    name: "Services",
+    name: "Pro Services",
     href: "/services",
     hasDropdown: true,
   },
   { name: "AAS Value+", href: "/value-plus" },
-  { name: "About", href: "/about" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
@@ -69,10 +70,12 @@ export default function Header() {
           {/* CTA Button */}
           <div className="hidden lg:flex lg:items-center lg:space-x-4">
             <Link
-              href="/contact"
+              href="https://wa.me/2348090548576?text=Hello,%20what%20help%20do%20you%20need%20with%20automobile(s)%20today?"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-2.5 bg-gold text-navy font-semibold rounded-lg hover:bg-gold-light transition-all duration-300 hover:shadow-lg hover:shadow-gold/50 hover:scale-105"
             >
-              Get Started
+              Chat With Us
             </Link>
           </div>
 
@@ -123,11 +126,13 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/contact"
+              href="https://wa.me/2348090548576?text=Hello,%20what%20help%20do%20you%20need%20with%20automobile(s)%20today?"
+              target="_blank"
+              rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
               className="mt-8 px-6 py-3 bg-gold text-navy font-semibold rounded-lg text-center hover:bg-gold-light transition-all"
             >
-              Get Started
+              Chat With Us
             </Link>
           </nav>
         </div>

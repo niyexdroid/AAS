@@ -139,7 +139,7 @@ export default function AboutPage() {
                   <p>
                     With over 5 years of industry experience, we&apos;ve grown
                     from a small advisory firm to a comprehensive automobile
-                    solutions provider, serving 150+ corporate clients and
+                    solutions provider, serving 50+ corporate clients and
                     hundreds of satisfied individual customers.
                   </p>
                   <p>
@@ -249,7 +249,7 @@ export default function AboutPage() {
               Ready to Work With Us?
             </h2>
             <p className="text-lg text-gray-300 mb-8">
-              Join 150+ satisfied corporate clients and experience the AAS
+              Join 50+ satisfied corporate clients and experience the AAS
               difference.
             </p>
             <ButtonWithArrow href="/contact" size="lg">

@@ -73,9 +73,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight"
           >
-            End the Burden of{" "}
-            <span className="text-gradient">Automobile Asset</span> Acquisition,
-            Ownership & Management.
+            End the burden of <span className="text-gradient">Auto Asset</span>{" "}
+            Acquisition, Ownership, Utility, Management & Replacement.
           </motion.h1>
 
           {/* Subheadline */}
@@ -85,8 +84,8 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-lg sm:text-xl lg:text-2xl text-gray-300 mb-12 leading-relaxed max-w-3xl mx-auto"
           >
-            Comprehensive Automobile Solutions for Corporate Fleets and
-            Discerning Individuals in Nigeria.
+            Comprehensive Automobile Solutions for Companies and Discerning
+            Individuals in Nigeria.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -96,7 +95,10 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <ButtonWithArrow href="/contact" size="lg">
+            <ButtonWithArrow
+              href="https://calendar.app.google/Fch4PiM8An9TmiRH7"
+              size="lg"
+            >
               Get a Free Consultation
             </ButtonWithArrow>
             <Button href="#lead-magnet" variant="secondary" size="lg">
@@ -112,10 +114,10 @@ export default function HeroSection() {
             className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-20"
           >
             {[
-              { value: "500+", label: "Vehicles Serviced" },
-              { value: "150+", label: "Corporate Clients" },
-              { value: "5+", label: "Years of Excellence" },
-              { value: "98%", label: "Client Satisfaction" },
+              { value: "500+", label: "Vehicles Sold & Serviced" },
+              { value: "50+", label: "Corporate Clients" },
+              { value: "10", label: "Years of Excellence" },
+              { value: "98%+", label: "Client Satisfaction" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl lg:text-4xl font-bold text-gold mb-2">

@@ -7,13 +7,13 @@ import { Award, Shield, Wrench, Users } from "lucide-react";
 const differences = [
   {
     icon: Award,
-    title: "5+ Years of Expertise",
+    title: "10+ Years of Expertise",
     description:
       "Proven track record in delivering exceptional automobile solutions across Nigeria.",
   },
   {
     icon: Shield,
-    title: "OEM Direct Interface",
+    title: "OEM Franchise & Direct Interface With Auto Finance Options",
     description:
       "Direct relationships with Original Equipment Manufacturers for authentic parts and vehicles.",
   },
