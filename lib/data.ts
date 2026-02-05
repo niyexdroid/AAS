@@ -33,8 +33,7 @@ export const servicesData = [
     description:
       "Comprehensive training programs for automotive sales professionals, fleet managers, and corporate teams.",
     icon: "🎓",
-    image:
-      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80",
+    image: "/auto_training.jpeg",
     fullDescription:
       "Elevate your automotive expertise with our specialized training programs. We offer comprehensive courses for sales professionals, fleet managers, and automotive enthusiasts.",
     benefits: [
@@ -79,7 +78,7 @@ export const servicesData = [
   },
   {
     id: 4,
-    title: "Cars Online Listing, Trade In & Upgrades",
+    title: "Cars Online Listing, Trade In & Upgrades (Rare Offer)",
     slug: "trade-upgrades",
     shortTitle: "Trade-In & Upgrades",
     description:
@@ -88,7 +87,7 @@ export const servicesData = [
     image:
       "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800&q=80",
     fullDescription:
-      "Ready to upgrade? We make selling or trading your vehicle effortless. Our online platform connects you with serious buyers, or use your vehicle's value toward your next purchase.",
+      "Ready to upgrade? We make selling or trading your vehicle effortless. Our online platform connects you with serious buyers, or use your vehicle's value toward your next purchase. We professionally manage and get you the best value on the sales, trade in and upgrade for your new & used cars.",
     benefits: [
       "Professional vehicle photography and listing",
       "Fair market value assessments",
@@ -105,7 +104,7 @@ export const servicesData = [
   },
   {
     id: 5,
-    title: "Trip Execution Services & Strategic Driver Support",
+    title: "Trip Execution Services & Strategic Driver Support (Car Rental)",
     slug: "driver-support",
     shortTitle: "Professional Driver Services",
     description:
@@ -114,10 +113,11 @@ export const servicesData = [
     image:
       "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80",
     fullDescription:
-      "Professional, trained, and thoroughly vetted drivers for your business or personal needs. From executive transport to event logistics, we ensure punctual, safe, and discrete service.",
+      "Professional, trained, and thoroughly vetted drivers for your business or personal needs. From executive transport to event logistics, we ensure punctual, safe, and discrete service. Also, we provide security escorts as add-on to this service",
     benefits: [
+      "Top condition & executive sedans, SUVs, Buses and Pick Ups (for escort)",
       "Thoroughly vetted professional drivers",
-      "Executive transport experience",
+      "Executive transport services (Local & Int’l airports arrival /departure services inclusive)",
       "Event and logistics support",
       "Flexible scheduling",
       "Safety and discretion guaranteed",
@@ -192,7 +192,7 @@ export const servicesData = [
     image:
       "https://images.unsplash.com/photo-1625047509252-7cdd1b07da03?w=800&q=80",
     fullDescription:
-      "Don't buy blind. Our comprehensive 200+ point Vehicle Quality Inspection & Valuation (VQIV) covers every aspect of the vehicle. Includes the prestigious AAS VQIV certificate and eligibility for AAS Value+ Warranty.",
+      "Don’t buy at guess rate and get a realistic value for your car if selling",
     benefits: [
       "200+ point comprehensive inspection",
       "Mechanical and electrical systems check",
@@ -244,7 +244,7 @@ export const servicesData = [
     image:
       "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?w=800&q=80",
     fullDescription:
-      "Upgrade your vehicle with cutting-edge technology. From GPS tracking systems to advanced dash cams and comfort accessories, we supply, install, and maintain the latest automotive tech.",
+      "Upgrade your vehicle with cutting-edge technology. From GPS tracking systems to advanced dash cams and comfort accessories, we supply, install, and maintain the latest automotive tech. Enhance your vehicle’s safety, security and comfort",
     benefits: [
       "Latest technology accessories",
       "Professional installation",

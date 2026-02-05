@@ -157,10 +157,33 @@ export default async function ServicePage(props: SlugPageProps) {
                       : "Let's discuss how the pro services can benefit you or your organization"}
                   </p>
                   <ButtonWithArrow
-                    href="https://calendar.app.google/Fch4PiM8An9TmiRH7"
+                    href={
+                      service.slug === "vehicle-inspection" ||
+                      service.slug === "fleet-audit"
+                        ? "https://forms.gle/jiRPMRUfa97zNPycA"
+                        : service.slug === "fleet-maintenance" ||
+                            service.slug === "genuine-parts" ||
+                            service.slug === "smart-accessories"
+                          ? "https://forms.gle/nRawBtsj7VHA2fc58"
+                          : "https://calendar.app.google/Fch4PiM8An9TmiRH7"
+                    }
                     className="w-full mb-4"
                   >
-                    Book a Meeting
+                    {service.slug === "trade-upgrades"
+                      ? "Browse Our Current Listing"
+                      : service.slug === "driver-support"
+                        ? "Book a Choice Ride Today"
+                        : service.slug === "fleet-maintenance"
+                          ? "Request for a Maintenance Quote"
+                          : service.slug === "genuine-parts"
+                            ? "Request for Auto Parts & Lubes Quote"
+                            : service.slug === "vehicle-inspection"
+                              ? "Request for a VQI or VQIV Report"
+                              : service.slug === "fleet-audit"
+                                ? "Request for VFPDA"
+                                : service.slug === "smart-accessories"
+                                  ? "Request for Auto Accessories"
+                                  : "Book a Meeting"}
                   </ButtonWithArrow>
                   <a
                     href="https://wa.me/2348090548576?text=Hello,%20what%20help%20do%20you%20need%20with%20automobile(s)%20today?"

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 
@@ -46,10 +47,15 @@ export default function Header() {
           <Link href="/" className="flex items-center space-x-2 group">
             <motion.div
               whileHover={{ scale: 1.05 }}
-              className="text-2xl font-bold"
+              className="relative h-12 w-32"
             >
-              <span className="text-white">AAS</span>
-              <span className="text-gold">.</span>
+              <Image
+                src="/aas_logo.jpeg"
+                alt="AAS Logo"
+                fill
+                className="object-contain mix-blend-lighten"
+                priority
+              />
             </motion.div>
           </Link>
 
