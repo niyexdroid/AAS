@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
-import { useRef, ReactNode } from "react";
+import { useEffect, useRef, useState, ReactNode } from "react";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -16,7 +16,16 @@ export function FadeIn({
   className = "",
 }: AnimatedSectionProps) {
   const ref = useRef(null);
+  const [hasMounted, setHasMounted] = useState(false);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <motion.div
@@ -37,7 +46,16 @@ export function ScaleIn({
   className = "",
 }: AnimatedSectionProps) {
   const ref = useRef(null);
+  const [hasMounted, setHasMounted] = useState(false);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return <div className={className}>{children}</div>;
+  }
 
   return (
     <motion.div
@@ -59,7 +77,15 @@ export function SlideIn({
   className = "",
 }: AnimatedSectionProps & { direction?: "left" | "right" | "up" | "down" }) {
   const ref = useRef(null);
+  const [hasMounted, setHasMounted] = useState(false);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  useEffect(() => {
+    setHasMounted(true);
+  }, []);
+
+  if (!hasMounted) {
+    return <div className={className}>{children}</div>;
+  }
 
   const directions = {
     left: { x: -100, y: 0 },

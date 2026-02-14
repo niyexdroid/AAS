@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Mail,
@@ -38,10 +39,15 @@ export default function Footer() {
             <Link href="/" className="inline-block">
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                className="text-3xl font-bold"
+                className="relative h-12 w-32"
               >
-                <span className="text-white">AAS</span>
-                <span className="text-gold">.</span>
+                <Image
+                  src="/logo.png"
+                  alt="AAS Logo"
+                  fill
+                  className="object-contain mix-blend-lighten"
+                  priority
+                />
               </motion.div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">

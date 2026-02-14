@@ -50,7 +50,7 @@ export default function Header() {
               className="relative h-12 w-32"
             >
               <Image
-                src="/aas_logo.jpeg"
+                src="/logo.png"
                 alt="AAS Logo"
                 fill
                 className="object-contain mix-blend-lighten"
