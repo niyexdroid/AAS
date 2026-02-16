@@ -8,7 +8,7 @@ import { Shield, Check, Award, FileCheck } from "lucide-react";
 export const metadata: Metadata = {
   title: "AAS Value+ Warranty",
   description:
-    "The Gold Standard in Vehicle Assurance. Comprehensive warranty coverage backed by our rigorous VQIV inspection process. Drive with complete peace of mind.",
+    "The Gold Standard in Vehicle Vehicle Buy & Own Assurance. Comprehensive warranty coverage backed by our rigorous VQIV inspection process. Drive with complete peace of mind.",
 };
 
 const features = [
@@ -76,7 +76,7 @@ export default function ValuePlusPage() {
             <div className="inline-flex items-center space-x-2 glass px-4 py-2 rounded-full mb-6">
               <Award className="w-5 h-5 text-gold" />
               <span className="text-sm text-gold">
-                Premium Vehicle Warranty
+                Premium Vehicle Buy+ Ownership
               </span>
             </div>
 
@@ -85,9 +85,9 @@ export default function ValuePlusPage() {
               Vehicle Assurance
             </h1>
             <p className="text-xl text-gray-300 mb-12">
-              Drive with absolute confidence. AAS Value+ Warranty provides
-              comprehensive coverage backed by our rigorous inspection process
-              and genuine OEM parts guarantee.
+              Buy and drive with absolute confidence. AAS Value+ ‘Buy, Maintain
+              & Cover’ is a vehicle lifecycle deal pack that guarantees industry
+              unmatchable value for signed-up members.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -39,22 +39,19 @@ const values = [
 
 const team = [
   {
-    name: "Oluwaseun Adebayo",
-    role: "Founder & CEO",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+    name: "Abayomi Abass Oko-osi",
+    role: "Founder & Lead Partner",
+    image: "/yomi.jpeg",
   },
   {
-    name: "Chioma Nwosu",
-    role: "Head of Operations",
-    image:
-      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+    name: "Engr. Bashir Cousim",
+    role: "Chief Technical Officer & Partner",
+    image: "/cousim.jpeg",
   },
   {
-    name: "Ibrahim Mohammed",
-    role: "Technical Director",
-    image:
-      "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80",
+    name: "Adegbola Adeniyi",
+    role: "Head of Transformation & Innovation",
+    image: "/niyi%20pass.jpeg",
   },
 ];
 
@@ -249,8 +246,8 @@ export default function AboutPage() {
               Ready to Work With Us?
             </h2>
             <p className="text-lg text-gray-300 mb-8">
-              Join 50+ satisfied corporate clients and experience the AAS
-              difference.
+              Join 50+ satisfied corporate clients and 500+ individuals to
+              explore the AAS Difference.
             </p>
             <ButtonWithArrow href="/contact" size="lg">
               Get in Touch

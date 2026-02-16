@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useEffect, useRef, useState, ReactNode } from "react";
+import { ReactNode } from "react";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -15,23 +14,11 @@ export function FadeIn({
   delay = 0,
   className = "",
 }: AnimatedSectionProps) {
-  const ref = useRef(null);
-  const [hasMounted, setHasMounted] = useState(false);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-
-  if (!hasMounted) {
-    return <div className={className}>{children}</div>;
-  }
-
   return (
     <motion.div
-      ref={ref}
-      initial={{ opacity: 0, y: 50 }}
-      animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      initial={{ opacity: 1, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, delay, ease: "easeOut" }}
       className={className}
     >
@@ -45,23 +32,11 @@ export function ScaleIn({
   delay = 0,
   className = "",
 }: AnimatedSectionProps) {
-  const ref = useRef(null);
-  const [hasMounted, setHasMounted] = useState(false);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-
-  if (!hasMounted) {
-    return <div className={className}>{children}</div>;
-  }
-
   return (
     <motion.div
-      ref={ref}
-      initial={{ opacity: 0, scale: 0.8 }}
-      animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0.8 }}
+      initial={{ opacity: 1, scale: 0.98 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.5, delay, ease: "easeOut" }}
       className={className}
     >
@@ -76,17 +51,6 @@ export function SlideIn({
   direction = "left",
   className = "",
 }: AnimatedSectionProps & { direction?: "left" | "right" | "up" | "down" }) {
-  const ref = useRef(null);
-  const [hasMounted, setHasMounted] = useState(false);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-  useEffect(() => {
-    setHasMounted(true);
-  }, []);
-
-  if (!hasMounted) {
-    return <div className={className}>{children}</div>;
-  }
-
   const directions = {
     left: { x: -100, y: 0 },
     right: { x: 100, y: 0 },
@@ -96,13 +60,9 @@ export function SlideIn({
 
   return (
     <motion.div
-      ref={ref}
-      initial={{ opacity: 0, ...directions[direction] }}
-      animate={
-        isInView
-          ? { opacity: 1, x: 0, y: 0 }
-          : { opacity: 0, ...directions[direction] }
-      }
+      initial={{ opacity: 1, ...directions[direction] }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      viewport={{ once: true, margin: "-100px" }}
       transition={{ duration: 0.6, delay, ease: "easeOut" }}
       className={className}
     >

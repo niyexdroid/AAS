@@ -1,21 +1,30 @@
 "use client";
 
-import { motion, AnimatePresence } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useInView,
+  useReducedMotion,
+} from "framer-motion";
 import { testimonials } from "@/lib/data";
 import { FadeIn } from "@/components/AnimatedSection";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function TestimonialsSection() {
   const [startIndex, setStartIndex] = useState(0);
+  const shouldReduceMotion = useReducedMotion();
+  const sectionRef = useRef<HTMLElement | null>(null);
+  const isInView = useInView(sectionRef, { margin: "-100px" });
 
   // Auto-advance carousel
   useEffect(() => {
+    if (!isInView || shouldReduceMotion) return;
     const timer = setInterval(() => {
       setStartIndex((prev) => (prev + 1) % testimonials.length);
     }, 5000);
     return () => clearInterval(timer);
-  }, []);
+  }, [isInView, shouldReduceMotion]);
 
   const goToPrevious = () => {
     setStartIndex(
@@ -39,7 +48,10 @@ export default function TestimonialsSection() {
   const visibleTestimonials = getVisibleTestimonials();
 
   return (
-    <section className="py-24 bg-navy relative overflow-hidden">
+    <section
+      ref={sectionRef}
+      className="py-24 bg-navy relative overflow-hidden"
+    >
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gold/5 via-transparent to-transparent" />
 
@@ -80,9 +92,15 @@ export default function TestimonialsSection() {
                 return (
                   <motion.div
                     key={`${globalIndex}-${startIndex}`}
-                    initial={{ opacity: 0, x: 100 }}
+                    initial={
+                      shouldReduceMotion ? false : { opacity: 0, x: 100 }
+                    }
                     animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -100 }}
+                    exit={
+                      shouldReduceMotion
+                        ? { opacity: 1, x: 0 }
+                        : { opacity: 0, x: -100 }
+                    }
                     transition={{
                       duration: 0.5,
                       delay: index * 0.1,
